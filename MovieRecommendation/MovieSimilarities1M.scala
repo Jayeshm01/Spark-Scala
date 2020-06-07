@@ -9,12 +9,6 @@ import scala.io.Codec
 import scala.math.sqrt
 
 
-// To run on EMR successfully + output results for Star Wars:
-// aws s3 cp s3://sundog-spark/MovieSimilarities1M.jar ./
-// aws s3 cp s3://sundog-spark/ml-1m/movies.dat ./
-// spark-submit --executor-memory 1g MovieSimilarities1M.jar 260
-
-
 object MovieSimilarities1M {
   
   /** Load up a Map of movie IDs to movie names. */
